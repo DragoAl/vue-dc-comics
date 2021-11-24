@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <main>
+      CONTENT GOES HERE
+      <!--COMPONENTE BLU AGGIUNTIVO AGGIUNGERE AL MAIN  -->
+      <PanelMenu />
+    </main>
+    <!-- FOOTER -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import PanelMenu from './components/PanelMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    PanelMenu
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
+  width: 60%;
+  margin: 30px auto;
+  font-family: "Greta Sans Condensed Bold","Greta Sans Bold",Arial,sans-serif;}
 </style>
