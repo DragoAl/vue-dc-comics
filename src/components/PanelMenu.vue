@@ -2,7 +2,7 @@
 <section>
     <ul>
         <li v-for="info, y in infos" :key='y'>
-            <img :src="require(`../assets/img/${info.img}`)" :alt="info.text">
+            <img :src="require(`../assets/img/${info.img}`)" :alt="info.text">  
             <a :href="info.url"> {{info.text}}</a>
 
         </li>
@@ -60,8 +60,8 @@ section {
     ul {
     display: flex;
     padding: 15px 10px;
-    width: 70%;
-    margin: 20px auto;
+    width: 75%;
+    margin: 0px auto;
     display: flex;
     justify-content: space-around;
 
@@ -75,6 +75,7 @@ section {
         // justify-content: space-around;
         // margin: 0 10px;
 
+        
         img {
             // width: 40px;
             height: 40px;

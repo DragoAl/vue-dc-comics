@@ -74,13 +74,15 @@ export default {
 
 <style scoped lang="scss">
     header {
-        width: 70%;
-        margin: 0 auto;
+        width: 75%;
+        margin: 0px auto;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: 100px;
         
         img {
-            width: 7%;
+            width: 6%;
         }
         
         li {
@@ -94,6 +96,8 @@ export default {
                 
                 &.active {
                     color: #0282f9 ;
+                    border-bottom: 3px solid #0282f9;
+                    padding-bottom: 38px;
                 }
             }
         }
