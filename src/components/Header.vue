@@ -74,6 +74,8 @@ export default {
 
 <style scoped lang="scss">
     header {
+        width: 70%;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         
