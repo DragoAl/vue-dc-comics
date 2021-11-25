@@ -3,6 +3,7 @@
     <Header />
     <main>
       <Jumbotron/>
+      <Products/>
 
       
     </main>
@@ -15,6 +16,7 @@
 <script>
 import Header from './components/Header.vue'
 import Jumbotron from './components/Jumbotron.vue'
+import Products from './components/Products.vue'
 import PanelMenu from './components/PanelMenu.vue'
 import Footer from './components/Footer.vue'
 
@@ -24,8 +26,10 @@ export default {
   components: {
     Header,
     Jumbotron,
+    Products,
     PanelMenu,
-    Footer
+    Footer,
+    
   }
 }
 </script>
