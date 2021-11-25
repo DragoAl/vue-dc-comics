@@ -2,9 +2,8 @@
   <div id="app">
     <Header />
     <main>
-      <section>
-        CONTENT GOES HERE
-      </section>
+      <Jumbotron/>
+
       
     </main>
     <PanelMenu />
@@ -15,13 +14,16 @@
 
 <script>
 import Header from './components/Header.vue'
+import Jumbotron from './components/Jumbotron.vue'
 import PanelMenu from './components/PanelMenu.vue'
 import Footer from './components/Footer.vue'
+
 
 export default {
   name: 'App',
   components: {
     Header,
+    Jumbotron,
     PanelMenu,
     Footer
   }
@@ -46,18 +48,4 @@ export default {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main {
-  background-color: #1c1c1c ;
-  height: 100px;
-  color: white;
-  vertical-align: middle;
-  line-height: 100px;
-
-  section {
-    width: 75%;
-    margin: 0 auto;
-  }
-  
-
-}
 </style>

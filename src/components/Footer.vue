@@ -280,6 +280,10 @@ footer {
                 padding: 12px;
                 font-weight: bold;
                 cursor: pointer;
+                
+                &:hover {
+                    background-color:#0282f9 ;
+                }
             }
 
             div {
