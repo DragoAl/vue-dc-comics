@@ -1,33 +1,33 @@
 <template>
   <div id="app">
-    <Header />
+    <AppHeader />
 
     <main>
-      <Jumbotron/>
+      <AppJumbotron/>
       <Products/>
       <PanelMenu />
     </main>
 
-    <Footer/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Jumbotron from './components/Jumbotron.vue'
+import AppHeader from './components/AppHeader.vue'
+import AppJumbotron from './components/AppJumbotron.vue'
 import Products from './components/Products.vue'
 import PanelMenu from './components/PanelMenu.vue'
-import Footer from './components/Footer.vue'
+import AppFooter from './components/AppFooter.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Jumbotron,
+    AppHeader,
+    AppJumbotron,
     Products,
     PanelMenu,
-    Footer,
+    AppFooter,
   }
 }
 </script>
@@ -38,12 +38,10 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  width: 100%;
-  margin: 0px auto;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

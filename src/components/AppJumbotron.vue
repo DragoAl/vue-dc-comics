@@ -4,8 +4,7 @@
 
 <script>
 export default {
-    name:'Jumbotron'
-   
+    name:'AppJumbotron'
 }
 </script>
 
@@ -14,7 +13,6 @@ export default {
     height: 300px;
     background-image: url("../assets/img/jumbotron.jpg");
     background-size: cover;
-
 }
 
 </style>

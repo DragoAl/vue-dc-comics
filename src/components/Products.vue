@@ -1,16 +1,14 @@
 <template>
     <section >
-        <div class="tag-current-series">CURRENT SERIES</div>
+        <div class="tag-current-series btn-style">CURRENT SERIES</div>
+       
         <div class="comics-container">
             <ComicsCard 
             v-for="product, i in products" :key='i' 
             :details='product'/>
-
         </div>
         
-        <div class="btn-load">LOAD MORE</div>
-
-        
+        <div class="btn-style btn-load">LOAD MORE</div>
     </section>    
 </template>
 
@@ -105,6 +103,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+$bg-btn-lightblue:#0282f9 ;
+
 section {
     background-color:#1c1c1c ;
     padding: 50px 0;
@@ -115,36 +115,33 @@ section {
         margin: 0px auto;
         display: flex;
         flex-wrap: wrap;
-       
     }
-    
 }
-.tag-current-series {
+
+.btn-style {
     width: 220px;
-    height: 50px;
-    background-color: #0282f9;
+    background-color: $bg-btn-lightblue;
     color: white;
-    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    line-height: 50px;
     vertical-align: middle;
+}
+
+.tag-current-series {
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
     position: absolute;
     bottom:95%;
     left: 12%;
 }
 
 .btn-load {
-    width: 220px;
     height: 40px;
-    background-color: #0282f9;
-    color: white;
     font-size: 14px;
-    font-weight:bold;
-    text-align: center;
     line-height: 40px;
-    vertical-align: middle;
     margin: 50px auto 0px;
+    cursor: pointer;
 }
 
 

@@ -3,33 +3,33 @@
         <div id="bg-footer">
             <section>
                 <nav>
-                    <h5>DC COMICS</h5>
+                    <h4>DC COMICS</h4>
                     <ul>
                         <li v-for="link, i in dcComicslinks " :key="i" >
                         <a :href="link.url" >{{link.text}}</a>
                         </li>
                     </ul>
 
-                    <h5>SHOP</h5>
+                    <h4>SHOP</h4>
                     <ul>
                         <li v-for="link, y in shoplinks " :key="y" >
-                        <a :href="link.url" >{{link.text}}</a>
+                            <a :href="link.url" >{{link.text}}</a>
                         </li>
                     </ul>
                     </nav>
                 <nav>
-                    <h5>DC</h5>
+                    <h4>DC</h4>
                     <ul>
                         <li v-for="link, x in dclinks " :key="x" >
-                        <a :href="link.url" >{{link.text}}</a>
+                            <a :href="link.url" >{{link.text}}</a>
                         </li>
                     </ul>
                 </nav>
                 <nav>
-                    <h5>SITES</h5>
+                    <h4>SITES</h4>
                     <ul>
                         <li v-for="link, n in siteslinks " :key="n" >
-                        <a :href="link.url" >{{link.text}}</a>
+                            <a :href="link.url" >{{link.text}}</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,20 +52,17 @@
                     </ul>
 
                 </div>
-                
-
-
+            
             </section>
         </div>
         
-
     </footer>
     
 </template>
 
 <script>
 export default {
-  name: 'Footer',
+  name: 'AppFooter',
   data(){
         return {
             dcComicslinks: [
@@ -99,6 +96,7 @@ export default {
                 }
 
             ],
+
             shoplinks: [
                 {
                     text:'Shop DC',
@@ -109,6 +107,7 @@ export default {
                     url: '#'
                 }
             ],
+
             dclinks: [
                 {
                     text: 'Terms Of Use',
@@ -156,6 +155,7 @@ export default {
                 }
 
             ],
+
             siteslinks: [
                 {
                     text: 'DC',
@@ -179,6 +179,7 @@ export default {
                 }
                
             ],
+
             sociallinks: [
                 {   
                     text:'facebook',
@@ -210,13 +211,8 @@ export default {
                     url: '#'
                      
                 }
-               
             ],
-
-            
         }
-
-      
     }
 }
 </script>
@@ -238,7 +234,7 @@ footer {
             margin: 0px auto;
             display: flex;
 
-            h5 {
+            h4 {
                 color: white;
                 margin: 15px 20px;
             }
@@ -251,7 +247,7 @@ footer {
                         text-decoration: none;
                         text-align: start;
                         color:#898989 ;
-                        font-size: 10px;
+                        font-size: 12px;
                     }
                 }
             }
@@ -262,7 +258,6 @@ footer {
     #footer-bottom {
         background-color:#303030 ;
         height: 100px;
-        margin: 0 auto;
         display: flex;
         align-items: center;
         
@@ -278,6 +273,7 @@ footer {
                 color: white;
                 background-color: #303030 ;
                 padding: 12px;
+                font-size: 18px;
                 font-weight: bold;
                 cursor: pointer;
                 

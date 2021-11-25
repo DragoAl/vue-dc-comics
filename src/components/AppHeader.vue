@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: 'Header',
+    name: 'AppHeader',
     data() {
         return {
             links: [
@@ -91,13 +91,22 @@ export default {
             a {
                 text-decoration: none;
                 color: #494b68;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: bold;
+                padding-bottom: 40px ;
+                transition-duration: 0.2s;
                 
                 &.active {
                     color: #0282f9 ;
                     border-bottom: 3px solid #0282f9;
                     padding-bottom: 38px;
+                }
+
+                &:hover {
+                    color: #0282f9 ;
+                    border-bottom: 3px solid #0282f9;
+                    padding-bottom: 38px;
+                    
                 }
             }
         }

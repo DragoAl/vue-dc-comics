@@ -4,7 +4,6 @@
         <li v-for="info, y in infos" :key='y'>
             <img :src="require(`../assets/img/${info.img}`)" :alt="info.text">  
             <a :href="info.url"> {{info.text}}</a>
-
         </li>
     </ul>
 
@@ -67,25 +66,19 @@ section {
 
 
     li {
-        // width: calc(100% / 5 ) ;
         list-style: none;
         padding: 20px;
         display: flex;
         align-items: center;
-        // justify-content: space-around;
-        // margin: 0 10px;
 
-        
         img {
             width: 40px;
-            // height: 40px;
-            
         }
 
-        a{
+        a {
             text-decoration: none;
             color: white;
-            font-size: 10px;
+            font-size: 12px;
             margin-left: 8px;
         }
 
